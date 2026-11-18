@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "D0": "data0",
+    "D1": "data1",
+    "P": "parity"
+  },
+  "rs": {
+    "data": 2,
+    "parity": 1
+  },
+  "hosts": {
+    "data0": "192.0.2.11",
+    "data1": "192.0.2.12",
+    "parity": "192.0.2.13"
+  }
+}

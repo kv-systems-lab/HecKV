@@ -1,0 +1,49 @@
+{
+  "topology": {
+    "placement": {
+      "D0": "data0",
+      "D1": "data1",
+      "P": "parity"
+    },
+    "rs": {
+      "data": 2,
+      "parity": 1
+    },
+    "hosts": {
+      "data0": "192.0.2.11",
+      "data1": "192.0.2.12",
+      "parity": "192.0.2.13"
+    }
+  },
+  "data0": {
+    "host": "192.0.2.11",
+    "project_root": "/path/to/project",
+    "gpu_ids": [
+      0,
+      1
+    ]
+  },
+  "data1": {
+    "host": "192.0.2.12",
+    "project_root": "/path/to/project",
+    "gpu_ids": [
+      0,
+      1
+    ]
+  },
+  "parity": {
+    "host": "192.0.2.13",
+    "storage_root": "/path/to/parity"
+  },
+  "model_path": "/path/to/Qwen3-8B",
+  "tp": 2,
+  "dtype": "bf16",
+  "input_tokens": 16384,
+  "output_tokens": 128,
+  "concurrency": 1,
+  "protection_chunk_tokens": [
+    256,
+    512,
+    1024
+  ]
+}

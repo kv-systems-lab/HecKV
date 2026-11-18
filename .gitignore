@@ -1,0 +1,17 @@
+# Local experiment and model data
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.key
+*.pem
+*.log
+*.tar
+*.tar.gz
+models/
+outputs/
+expresult/
+**/evidence/
+**/runs/
+**/checkpoints/
+**/kv_snapshots/
